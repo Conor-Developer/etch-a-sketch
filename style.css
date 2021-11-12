@@ -1,18 +1,71 @@
+/* Main structure of web page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0ABAB5;
+}
+
+/* Container for the etch-a-sketch grid */
 #container {
-    border: red solid 5px;
     width: 750px;
     height: 750px;
     display: flex;
     flex-wrap: wrap;
-
-
+    border: #FF7F7F solid 25px;
+    border-top:#FF7F7F solid 20px;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
+/* The div squares inside the grid */
 .grid {
     border: black solid 1px;
     box-sizing: border-box;
+    background-color: #D3D3D3;
 }
 
+@font-face {
+    font-family: Neon-e2wg;
+    src: url("./font/Neon-e2wg.ttf");
+}
 
+/* Etch-A-Sketch Title */
+h1 {
+    font-family: Neon-e2wg;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 10px;
+    color: #FFD580
+}
 
+/* Reset button */
+#reset {
+    margin: 10px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: Roboto;
+}
 
+#reset:hover {
+    background: grey;
+}
+
+/* The header to imlpement title and reset button into 
+    border of Etch-A-Sketch container */
+.header {
+    background: #FF7F7F;
+    width: 800px;
+    text-align: center;
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Credentials */ 
+.footer {
+    font-family: Roboto;
+}
